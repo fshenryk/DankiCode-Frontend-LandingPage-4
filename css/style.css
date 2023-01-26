@@ -318,13 +318,137 @@ section.depoimentos .depoimento-single{
     vertical-align: top;
 }
 
+/* ---------- SOCIAL ---------- */
 
+.instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #98a5ae;
+}
+
+.instagram-chamada p{
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.mosaico-social{
+    float: left;
+    width: 100%;
+}
+
+.img-mosaico-single-social{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: blue;
+    border: 6px solid white;
+}
+
+.facebook-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #576975;
+}
+
+.facebook-chamada p{
+    line-height: 23px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+/* ---------- CONTATO ---------- */
+
+section.contato{
+    padding: 60px 0;
+}
+
+section.contato > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.contato form{
+    width: 100%;
+    margin: 30px auto;
+    max-width: 500px;
+}
+
+.form-wraper{
+    float: left;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.form-wraper span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.form-wraper input[type=text]{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+}
+
+.form-wraper textarea{
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+    height: 121px;
+    resize: none;
+    border: 1px solid #dadada;
+}
+
+.form-wraper.w100.button{
+    text-align: center;
+}
+
+.form-wraper input[type=submit]{
+    width: 100px;
+    height: 35px;
+    display: inline-block;
+    border: 0;
+    background-color: #688293;
+    color: white;
+    cursor: pointer;
+}
 
 
 
 
 /* ---------- MEDIA QUERIES ---------- */
 
+@media screen and (max-width: 1024px) {
+    .img-mosaico-single-social{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+    
+    .mosaico-social > div:nth-of-type(1n+7){
+        display: none;
+    }
+}
+
+/* -------------------------------------------- */
 @media screen and (max-width: 768px) {
 
     /* nav */
@@ -386,7 +510,6 @@ section.depoimentos .depoimento-single{
     
 
 /* ---------- videos ---------- */
-
     section.videos{
         text-align: center;
     }
@@ -398,8 +521,20 @@ section.depoimentos .depoimento-single{
         padding-top: calc(70% * 0.6);
     }
 
+
+/* ---------- social ---------- */
+    .img-mosaico-single-social{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+    
+    .mosaico-social > div:nth-of-type(1n+4){
+        display: none;
+    }
+
 }
 
+/* ---------------------------------------------- */
 @media screen and (max-width: 580px) {
 
     section.perfil-container .img-perfil{
@@ -411,8 +546,13 @@ section.depoimentos .depoimento-single{
         width: 100%;
         padding-top: calc(100% * 0.6);
     }
+
+    .w50{
+        width: 100%;
+    }
 }
 
+/* ------------------------------------------------ */
 @media screen and (max-width: 480px) {
     header .logo img{
         width: 200px;
